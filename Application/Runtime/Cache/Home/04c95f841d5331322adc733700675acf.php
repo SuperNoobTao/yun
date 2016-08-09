@@ -177,134 +177,18 @@
 <div class="case-gallery module-wrap no-borderb">
   <div class="am-container">
     <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2 am-avg-md-3 am-avg-lg-3 am-gallery-default" data-am-gallery="{ pureview: true }">
-      <li>
+
+<?php if(is_array($castinfo)): $i = 0; $__LIST__ = $castinfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$c): $mod = ($i % 2 );++$i;?><li>
         <div class="am-gallery-item">
           <a href="http://bellevuecn.com" target="_blank" class="gallery-mask" rel="nofollow">
-              <p class="site-name">美国Bellevue市政府</p>
+              <p class="site-name"><?php echo ($c['sitename']); ?></p>
               <div class="qrcode-mod"></div>
-              <p class="site-url">http://bellevuecn.com</p>
+              <p class="site-url"><?php echo ($c['siteurl']); ?></p>
           </a>
-          <a href="http://bellevuecn.com" target="_blank" class="gallery-mask-dark am-vertical-align-middle" rel="nofollow"><span>美国Bellevue市政府</span></a>
-          <img src="/yun/Public/Home/images/case/case1.png" alt="美国Bellevue市政府"/>
+          <a href="http://bellevuecn.com" target="_blank" class="gallery-mask-dark am-vertical-align-middle" rel="nofollow"><span><?php echo ($c["sitename"]); ?></span></a>
+          <img src="/yun/Public/Home/<?php echo ($c['siteimg']); ?>" alt="<?php echo ($c['sitename']); ?>"/>
         </div>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-          <a href="http://www.robam.com/" target="_blank" class="gallery-mask" rel="nofollow">
-            <p class="site-name">老板电器</p>
-            <div class="qrcode-mod"></div>
-            <p class="site-url">http://www.robam.com/</p>
-          </a>
-          <a href="http://www.robam.com/" target="_blank" class="gallery-mask-dark" rel="nofollow"><span>老板电器</span></a>
-          <img src="/yun/Public/Home/images/case/case2.png" alt="老板电器"/>
-        </div>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-          <a href="http://itjuzi.com/" target="_blank" class="gallery-mask" rel="nofollow">
-            <p class="site-name">IT桔子</p>
-            <div class="qrcode-mod"></div>
-            <p class="site-url">http://itjuzi.com/</p>
-          </a>
-          <a href="http://itjuzi.com/" target="_blank" class="gallery-mask-dark" rel="nofollow"><span>IT桔子</span></a>
-          <img src="/yun/Public/Home/images/case/case3.png" alt="IT桔子"/>
-        </div>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-          <a href="http://www.zgc.gov.cn/" target="_blank" class="gallery-mask" rel="nofollow">
-            <p class="site-name">中关村管委会</p>
-            <div class="qrcode-mod"></div>
-            <p class="site-url">http://www.zgc.gov.cn/</p>
-          </a>
-          <a href="http://www.zgc.gov.cn/" target="_blank" class="gallery-mask-dark" rel="nofollow"><span>中关村管委会</span></a>
-          <img src="/yun/Public/Home/images/case/case4.png" alt="中关村管委会"/>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-          <a href="http://www.enfodesk.com/" target="_blank" class="gallery-mask" rel="nofollow">
-            <p class="site-name">易观智库</p>
-            <div class="qrcode-mod"></div>
-            <p class="site-url">http://www.enfodesk.com/</p>
-          </a>
-          <a href="http://www.enfodesk.com/" target="_blank" class="gallery-mask-dark" rel="nofollow"><span>易观智库</span></a>
-          <img src="/yun/Public/Home/images/case/case5.png" alt="易观智库"/>
-        </div>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-          <a href="http://www.fxiaoke.com/" target="_blank" class="gallery-mask" rel="nofollow">
-            <p class="site-name">纷享销客</p>
-            <div class="qrcode-mod"></div>
-            <p class="site-url">http://www.fxiaoke.com/</p>
-          </a>
-          <a href="http://www.fxiaoke.com/" target="_blank" class="gallery-mask-dark" rel="nofollow"><span>纷享销客</span></a>
-          <img src="/yun/Public/Home/images/case/case6.png" alt="纷享销客"/>
-        </div>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-          <a href="http://www.iceo.com.cn/" target="_blank" class="gallery-mask" rel="nofollow">
-            <p class="site-name">中国企业家</p>
-            <div class="qrcode-mod"></div>
-            <p class="site-url">http://www.iceo.com.cn/</p>
-          </a>
-          <a href="http://www.iceo.com.cn/" target="_blank" class="gallery-mask-dark" rel="nofollow"><span>中国企业家</span></a>
-          <img src="/yun/Public/Home/images/case/case7.png" alt="中国企业家"/>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-          <a href="http://csdn.net" target="_blank" class="gallery-mask" rel="nofollow">
-            <p class="site-name">CSDN</p>
-            <div class="qrcode-mod"></div>
-            <p class="site-url">http://csdn.net</p>
-          </a>
-          <a href="http://csdn.net" target="_blank" class="gallery-mask-dark" rel="nofollow"><span>CSDN</span></a>
-          <img src="/yun/Public/Home/images/case/case8.png" alt="CSDN"/>
-        </div>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-          <a href="http://blog.51cto.com/" target="_blank" class="gallery-mask" rel="nofollow">
-            <p class="site-name">51CTO技术博客</p>
-            <div class="qrcode-mod"></div>
-            <p class="site-url">http://blog.51cto.com/</p>
-          </a>
-          <a href="http://blog.51cto.com/" target="_blank" class="gallery-mask-dark" rel="nofollow"><span>51CTO技术博客</span></a>
-          <img src="/yun/Public/Home/images/case/case9.png" alt="51CTO技术博客"/>
-        </div>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-          <a href="http://kuailiyu.cyzone.cn/" target="_blank" class="gallery-mask" rel="nofollow">
-            <p class="site-name">快鲤鱼</p>
-            <div class="qrcode-mod"></div>
-            <p class="site-url">http://kuailiyu.cyzone.cn/</p>
-          </a>
-          <a href="http://kuailiyu.cyzone.cn/" target="_blank" class="gallery-mask-dark" rel="nofollow"><span>快鲤鱼</span></a>
-          <img src="/yun/Public/Home/images/case/case10.png" alt="快鲤鱼"/>
-      <li>
-        <div class="am-gallery-item">
-          <a href="http://www.cyol.net/" target="_blank" class="gallery-mask" rel="nofollow">
-            <p class="site-name">中青在线</p>
-            <div class="qrcode-mod"></div>
-            <p class="site-url">http://www.cyol.net/</p>
-          </a>
-          <a href="http://www.cyol.net/" target="_blank" class="gallery-mask-dark" rel="nofollow"><span>中青在线</span></a>
-          <img src="/yun/Public/Home/images/case/case11.png" alt="中青在线"/>
-        </div>
-      </li>
-      <li>
-        <div class="am-gallery-item">
-          <a href="http://www.cyzone.cn" target="_blank" class="gallery-mask" rel="nofollow">
-            <p class="site-name">创业邦</p>
-            <div class="qrcode-mod"></div>
-            <p class="site-url">http://www.cyzone.cn</p>
-          </a>
-          <a href="http://www.cyzone.cn" target="_blank" class="gallery-mask-dark" rel="nofollow"><span>创业邦</span></a>
-          <img src="/yun/Public/Home/images/case/case12.png" alt="创业邦"/>
-        </div>
-      </li>
+      </li><?php endforeach; endif; else: echo "" ;endif; ?>
     </ul>
     <div class="gallery-more"><a href="javascript:void(0)">查看更多</a></div>
   </div>
