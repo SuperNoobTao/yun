@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class IndexController extends BaseController {
+class FriendLinkController extends BaseController {
     public function index(){
         $this->display();
     }
