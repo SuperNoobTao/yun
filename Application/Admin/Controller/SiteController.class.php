@@ -6,12 +6,7 @@ class SiteController extends BaseController {
     public function config(){
         if ($_SERVER['REQUEST_METHOD']=='POST') {
             //写入
-            $data['sitename']=I('post.sitename');
-            $data['discript']=I('post.discript');
-            $data['keywords']=I('post.keywords');
-            $data['title']=I('post.title');
-            $data['copyright']=I('post.copyright');
-            $data['icp']=I('post.icp');
+            $data=$_POST;
             $where['id']=1;
             $savedata=M('siteconfig')->where($where)->save($data);
             if ($savedata) {
