@@ -7,7 +7,6 @@ class CastManagerController extends BaseController
     {
         $castinfo = M('cast')->select();
         $this->assign('castinfo', $castinfo);
-
         $this->display();
     }
 
